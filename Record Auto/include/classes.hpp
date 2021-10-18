@@ -3,12 +3,6 @@
 
 #include "main.h"
 
-class Base {
-public:
-  Base();
-  void drive();
-};
-
 class Recorder {
 public:
   vector<int> motor_voltages;

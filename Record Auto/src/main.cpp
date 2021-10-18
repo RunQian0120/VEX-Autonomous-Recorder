@@ -1,5 +1,4 @@
 #include "main.h"
-
 // Motor Definitions
 pros::Motor FR(frPort, E_MOTOR_GEARSET_18, true, E_MOTOR_ENCODER_DEGREES);
 pros::Motor BR(brPort, E_MOTOR_GEARSET_18, true, E_MOTOR_ENCODER_DEGREES);
@@ -20,18 +19,6 @@ void autonomous() {
 }
 
 void initialize() {
-  FR.set_brake_mode(E_MOTOR_BRAKE_HOLD);
-	BR.set_brake_mode(E_MOTOR_BRAKE_HOLD);
-	FL.set_brake_mode(E_MOTOR_BRAKE_HOLD);
-	BL.set_brake_mode(E_MOTOR_BRAKE_HOLD);
-
-	IntakeR.set_brake_mode(E_MOTOR_BRAKE_HOLD);
-	IntakeL.set_brake_mode(E_MOTOR_BRAKE_HOLD);
-	RollerTop.set_brake_mode(E_MOTOR_BRAKE_HOLD);
-	RollerBot.set_brake_mode(E_MOTOR_BRAKE_HOLD);
-
-	pros::lcd::initialize();
-
   Task record(recorderFunction, (void*)"PROS", //Initialize multitask function
     TASK_PRIORITY_DEFAULT,
     TASK_STACK_DEPTH_DEFAULT,

@@ -17,7 +17,6 @@
 #include <string>
 #include <iterator>
 
-
 using namespace pros;
 using namespace std;
 
@@ -34,7 +33,6 @@ extern pros::Motor IntakeL;
 
 extern pros::Controller master;
 
-extern Base base;
 extern Recorder recorder;
 
 #define brPort 8
