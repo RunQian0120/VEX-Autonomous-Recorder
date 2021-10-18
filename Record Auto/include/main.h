@@ -20,21 +20,17 @@
 using namespace pros;
 using namespace std;
 
+//GLOBAL MOTOR DEFINTIONS
 extern pros::Motor BR;
 extern pros::Motor BL;
 extern pros::Motor FR;
 extern pros::Motor FL;
-
 extern pros::Motor RollerBot;
 extern pros::Motor RollerTop;
-
 extern pros::Motor IntakeR;
 extern pros::Motor IntakeL;
 
-extern pros::Controller master;
-
-extern Recorder recorder;
-
+//MOTOR PORT DEFINITIONS
 #define brPort 8
 #define blPort 20
 #define frPort 4
@@ -43,6 +39,11 @@ extern Recorder recorder;
 #define intakeLPort 1
 #define rollerBotPort 10
 #define rollerTopPort 9
+
+extern pros::Controller master;
+
+extern Recorder recorder;
+
 
 
 #ifdef __cplusplus
